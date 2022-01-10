@@ -1,471 +1,539 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+     <link rel="shortcut icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/67/5c/c5/675cc54a-bfef-7923-b1c2-938bd17b5bb1/source/512x512bb.jpg">
+
+<meta name='apple-mobile-web-app-capable' content='yes' />
 <meta charset="UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Best Videos, Notes for your Most Important Exams." />
-    <meta property="og:site_name" content="VEDU.IN" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vedu</title>
-    <link rel="shortcut icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/67/5c/c5/675cc54a-bfef-7923-b1c2-938bd17b5bb1/source/512x512bb.jpg">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="IIbVryf9ywYRbzk7hK3LLmtqJMxYWwCJpzMOOo2yOe6A1NOLSivspXGlohk74ZHqRuK35mqLP452YRajb06OMQ==" />
+<link rel="stylesheet" media="screen" href="https://fedora.teachablecdn.com/assets/bootstrap-d989a3f5b1f1bca0585c204acf93e7e781ab3db1f16f403a5e77336f1c4d4c0f.css" data-turbolinks-track="true" /><link href="https://themes2.teachablecdn.com/themecss/production/base.css?_=a5534f0f978b&amp;brand_course_heading=%23ffffff&amp;brand_heading=%23191919&amp;brand_homepage_heading=%23ffffff&amp;brand_navbar_fixed_text=%23707070&amp;brand_navbar_text=%23707070&amp;brand_primary=%23ffffff&amp;brand_secondary=%23CB46D3&amp;brand_text=%234d4d4d&amp;logged_out_homepage_background_image_overlay=0.0&amp;logged_out_homepage_background_image_url=https%3A%2F%2Fwww.filepicker.io%2Fapi%2Ffile%2F6zhFyn86QRiFf5LTgQ0F" rel="stylesheet" data-turbolinks-track="true"></link>
+<title>Vedu-learning app</title>
 
-    <!-- google fonts cdn link  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://dz8fbjd9gwp2s.cloudfront.net/resources/pagebuilder2/box/box.css" rel="stylesheet" type="text/css" />
-      <link href="https://dz8fbjd9gwp2s.cloudfront.net/resources/pagebuilder2/assets/minimalist-blocks/content.css" rel="stylesheet" type="text/css" />
-      <link data-name="contentstyle" data-class="type-pathwaygothicone-merriweather" href="https://dz8fbjd9gwp2s.cloudfront.net/resources/pagebuilder/assets/styles/type-pathwaygothicone-merriweather.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-poppins" href="https://dz8fbjd9gwp2s.cloudfront.net/resources/pagebuilder/assets/styles/type-poppins.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreyasanssc-hind" href="https://dz8fbjd9gwp2s.cloudfront.net/resources/pagebuilder/assets/styles/type-alegreyasanssc-hind.css" rel="stylesheet">
-  </head>
-<style>
-body {
-  font-family: "Lato", sans-serif;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: 100% 100%;
-  height: 100px;
-  width: 100%;
-  background:linear-gradient(to right, #0061f1,#8cc9fc);
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 5vw;
-}
-
-.sidenav a {
-  padding: 2vw 2vw 2vw 3vw;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+<meta name="site_title" content="Vedu-learning app">
+<style></style>
+<script src='//fast.wistia.com/assets/external/E-v1.js'></script>
+<script src='https://www.recaptcha.net/recaptcha/api.js' async defer></script>
 
 
-</style>
+      <meta name="asset_host" content="https://fedora.teachablecdn.com">
+     <script src="https://fedora.teachablecdn.com/packs/student-globals-bb59d971e9243dadbb69.js"></script><script src="https://fedora.teachablecdn.com/packs/student-legacy-9330327b37956003a128.js"></script><script src="https://fedora.teachablecdn.com/packs/student-ae8399253da436b6975f.js"></script>
+
+<link rel="stylesheet" href="https://codewithmosh-assets.netlify.app/styles.8986bff4.css?v=1" />
 </head>
-<body>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div>
-    <a href="https://gokul2009.github.io/Vedu/"><img src="https://i1.wp.com/vedu.academy/wp-content/uploads/2020/06/Vedu-W.png?fit=466%2C277&ssl=1"width=90 height=60></a>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TJ6Q5ZZ');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- Global site tag (gtag.js) - Google Ads: 961214977 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-961214977"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'AW-961214977');
+ gtag('config', 'UA-66465936-2', { 
+     'linker': {
+         'domains': ['codewithmosh.com', 'teachable.com', 'programmingwithmosh.com']
+     }
+ });
+ gtag('config', 'UA-107342491-1', { 'optimize_id': 'GTM-MMDJGCK'});
+</script>
+
+
+<!-- ActiveCampaign -->
+<script type="text/javascript">
+  // Set to false if opt-in required
+  var trackByDefault = true;
+
+  function acEnableTracking() {
+    var expiration = new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 30);
+    document.cookie = "ac_enable_tracking=1; expires= " + expiration + "; path=/";
+    acTrackVisit();
+  }
+
+  function acTrackVisit() {
+    var trackcmp_email = '';
+    var trackcmp = document.createElement("script");
+    trackcmp.async = true;
+    trackcmp.type = 'text/javascript';
+    trackcmp.src = '//trackcmp.net/visit?actid=89545604&e='+encodeURIComponent(trackcmp_email)+'&r='+encodeURIComponent(document.referrer)+'&u='+encodeURIComponent(window.location.href);
+    var trackcmp_s = document.getElementsByTagName("script");
+    if (trackcmp_s.length) {
+      trackcmp_s[0].parentNode.appendChild(trackcmp);
+    } else {
+      var trackcmp_h = document.getElementsByTagName("head");
+      trackcmp_h.length && trackcmp_h[0].appendChild(trackcmp);
+    }
+  }
+
+  if (trackByDefault || /(^|; )ac_enable_tracking=([^;]+)/.test(document.cookie)) {
+    acEnableTracking();
+  }
+</script>
+<!-- End of ActiveCampaign -->
+
+
+<script src="https://my.hellobar.com/b9e58eff724f913d2339258027a6c7874805fbbe.js" type="text/javascript" charset="utf-8" async="async"></script>
+
+
+<script>
+  if(typeof ga != 'function') {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  }
+  ga('create', 'UA-44397410-1', 'auto', {'name': 'fedoraTracker', 'allowLinker': true});
+  ga('fedoraTracker.set', 'anonymizeIp', false);
+ ga('fedoraTracker.require', 'linker');
+  ga('fedoraTracker.linker:autoLink', ['codewithmosh.com',  'sso.teachable.com'], false, true );
+  ga('fedoraTracker.require', 'ecommerce');
+  ga('fedoraTracker.require', 'ec');
+  ga('fedoraTracker.send', 'pageview');
+  ga('create', 'UA-44397410-4', 'auto', {'name': 'teachableTracker', 'allowLinker': true});
+  ga('teachableTracker.set', 'anonymizeIp', false);
+  ga('teachableTracker.require', 'linker');
+  ga('teachableTracker.linker:autoLink', ['codewithmosh.com', 'sso.teachable.com'], false, true );
+  ga('teachableTracker.require', 'ecommerce');
+  ga('teachableTracker.require', 'ec');
+  ga('teachableTracker.send', 'pageview');
+</script>
+
+<meta id='iris-url' data-iris-url=https://eventable.teachable.cloud />
+
+
+<link href="/blog/rss" rel="alternate" title="RSS Feed" type="application/rss+xml" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  </head>
+  <body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ6Q5ZZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+          <meta http-content='IE=Edge' http-equiv='X-UA-Compatible'>
+      <meta content='width=device-width,initial-scale=1.0,user-scalable=no' name='viewport'>
+<meta id="fedora-keys" data-commit-sha="a5534f0f978bc8be8825bf5ee757471a3b1ab7c1" data-env="production" data-sentry-public-dsn="https://8149a85a83fa4ec69640c43ddd69017d@sentry.io/120346" data-stripe="pk_live_hkgvgSBxG4TAl3zGlXiB1KUX" data-track-all-ahoy="false" data-track-changes-ahoy="false" data-track-clicks-ahoy="false" data-track-sumbits-ahoy="false" data-filepicker="ADNupMnWyR7kCWRvm76Laz" data-iris-url="https://eventable.teachable.cloud" /><meta id="fedora-data" data-report-card="{}" data-course-ids="[]" data-completed-lecture-ids="[]" data-school-id="146684" data-school-launched="true" data-preview="logged_out" data-turn-off-fedora-branding="true" data-plan-supports-whitelabeling="true" data-powered-by-text="Powered by" data-asset-path="//https://fedora.teachablecdn.com/assets/footer/teachable-logomark-white-31d2296978598bacace50e6d48a2e1223c20a9b074af424acdd465676f81560f.svg" data-school-preferences="{&quot;ssl_forced&quot;:&quot;true&quot;,&quot;bazaar_enabled&quot;:&quot;false&quot;,&quot;paypal_enabled&quot;:&quot;true&quot;,&quot;autoplay_lectures&quot;:&quot;true&quot;,&quot;comments_threaded&quot;:&quot;true&quot;,&quot;themeable_enabled&quot;:&quot;false&quot;,&quot;course_blocks_beta&quot;:&quot;true&quot;,&quot;eu_vat_tax_enabled&quot;:&quot;false&quot;,&quot;legacy_back_office&quot;:&quot;true&quot;,&quot;themeable_disabled&quot;:&quot;false&quot;,&quot;comments_moderation&quot;:&quot;false&quot;,&quot;eu_vat_tax_eligible&quot;:&quot;true&quot;,&quot;charge_exclusive_tax&quot;:&quot;true&quot;,&quot;drip_content_enabled&quot;:&quot;false&quot;,&quot;send_receipts_emails&quot;:&quot;true&quot;,&quot;autocomplete_lectures&quot;:&quot;true&quot;,&quot;class_periods_enabled&quot;:&quot;false&quot;,&quot;authors_can_manage_pbc&quot;:&quot;true&quot;,&quot;css_properties_enabled&quot;:&quot;false&quot;,&quot;preenrollments_enabled&quot;:&quot;false&quot;,&quot;native_comments_enabled&quot;:&quot;true&quot;,&quot;new_text_editor_enabled&quot;:&quot;true&quot;,&quot;require_terms_agreement&quot;:&quot;true&quot;,&quot;send_new_comment_emails&quot;:&quot;true&quot;,&quot;send_drip_content_emails&quot;:&quot;true&quot;,&quot;ssl_forced_from_creation&quot;:&quot;false&quot;,&quot;turn_off_fedora_branding&quot;:&quot;true&quot;,&quot;allow_comment_attachments&quot;:&quot;true&quot;,&quot;authors_can_email_students&quot;:&quot;false&quot;,&quot;authors_can_manage_coupons&quot;:&quot;false&quot;,&quot;teachable_accounts_enabled&quot;:&quot;true&quot;,&quot;teachable_payments_enabled&quot;:&quot;true&quot;,&quot;authors_can_import_students&quot;:&quot;false&quot;,&quot;authors_can_publish_courses&quot;:&quot;false&quot;,&quot;internal_subscriptions_beta&quot;:&quot;true&quot;,&quot;recaptcha_enabled_on_signup&quot;:&quot;true&quot;,&quot;tax_form_collection_enabled&quot;:&quot;false&quot;,&quot;display_vat_inclusive_prices&quot;:&quot;true&quot;,&quot;single_page_checkout_enabled&quot;:&quot;true&quot;,&quot;authors_can_set_course_prices&quot;:&quot;false&quot;,&quot;send_lead_confirmation_emails&quot;:&quot;true&quot;,&quot;affiliate_cookie_duration_days&quot;:&quot;365&quot;,&quot;authors_can_issue_certificates&quot;:&quot;false&quot;,&quot;store_student_cards_separately&quot;:&quot;true&quot;,&quot;affiliate_external_urls_enabled&quot;:&quot;true&quot;,&quot;authors_can_manage_certificates&quot;:&quot;false&quot;,&quot;authors_can_manage_course_pages&quot;:&quot;false&quot;,&quot;disable_js_course_event_tracking&quot;:&quot;false&quot;,&quot;exclusive_vat_on_custom_gateways&quot;:&quot;true&quot;,&quot;is_edit_site_onboarding_complete&quot;:&quot;false&quot;,&quot;send_certificate_issuance_emails&quot;:&quot;true&quot;,&quot;owner_teachable_accounts_required&quot;:&quot;true&quot;,&quot;prevent_payment_plan_cancellation&quot;:&quot;true&quot;,&quot;send_subscription_reminder_emails&quot;:&quot;true&quot;,&quot;automatically_add_disqus_attachments&quot;:&quot;true&quot;,&quot;recalc_course_pct_on_lecture_publish&quot;:&quot;false&quot;,&quot;send_confirmation_instructions_emails&quot;:&quot;true&quot;,&quot;send_limited_time_unenrollment_emails&quot;:&quot;true&quot;,&quot;turn_off_myteachable_sign_up_branding&quot;:&quot;false&quot;}" data-accessible-features="[&quot;bulk_importing_users&quot;,&quot;bulk_enroll_students&quot;,&quot;manually_importing_users&quot;,&quot;native_certificates&quot;,&quot;custom_roles&quot;,&quot;earnings_statements&quot;,&quot;teachable_payments&quot;,&quot;teachable_u&quot;,&quot;course_compliance&quot;,&quot;page_editor_v2&quot;,&quot;certificates_editor_v2&quot;,&quot;drip_content&quot;,&quot;custom_domain&quot;,&quot;coupons&quot;,&quot;graded_quizzes&quot;,&quot;power_editor&quot;,&quot;email&quot;,&quot;course_reports&quot;,&quot;webhooks&quot;,&quot;integrations&quot;,&quot;zapier_action_create_user&quot;,&quot;teachable_payments_payout_view&quot;,&quot;upsells&quot;,&quot;facebook_pixel&quot;,&quot;user_search_filters&quot;,&quot;multiple_course_pages&quot;,&quot;proration_upgrade_flow&quot;,&quot;cross_border_payments&quot;,&quot;limited_time_enrollments&quot;,&quot;sales_tax_on_student_checkout&quot;,&quot;new_device_confirmation&quot;,&quot;elasticsearch_users&quot;,&quot;elasticsearch_transactions&quot;,&quot;reset_progress&quot;,&quot;fraud_warnings&quot;,&quot;paypal_through_tp&quot;,&quot;new_creator_checkout&quot;,&quot;circle_oauth&quot;]" data-course-data="{}" /><meta id="analytics-keys" name="analytics" data-analytics="{&quot;Google Analytics&quot;:{&quot;trackingId&quot;:&quot;UA-66465936-2&quot;,&quot;enhancedEcommerce&quot;:true,&quot;sendUserId&quot;:true,&quot;schoolDomain&quot;:&quot;codewithmosh.com&quot;,&quot;anonymizeIp&quot;:true}}" />
+    
+    
+      <!-- HEADER -->
+<header class='v1-header'>
+  <!-- Navbar -->
+  <div
+    class="navbar navbar-fedora navbar-fixed-top is-at-top bs-docs-nav is-not-signed-in is-homepage hide-nav-background-color"
+    id='navbar'
+    role='navigation'>
+    <div class='container'>
+      <div class='navbar-header navbar-header-courses'>
+        <button class='navbar-toggle' data-target='.navbar-header-collapse' data-toggle='collapse' type='button'>
+          <span class='sr-only'>
+            Toggle navigation
+          </span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+        </button>
+        <!-- Site logo -->
+        
+          <a class='navbar-brand header-logo' href='https://gokul2009.github.io/Vedu/'>
+            <img src="https://i2.wp.com/vedu.academy/wp-content/uploads/2020/06/Vedu-S-1.png?fit=354%2C354&ssl=1"width=90 height=60/>
+          </a>
+          
+
+        <!-- Header Menu -->
+        <div class='collapse navbar-collapse navbar-header-collapse'>
+          <ul class='nav navbar-nav navbar-right'>
+  
+  
+  <li>
+    
+    <a class='fedora-navbar-link navbar-link' href='https://gokul2009.github.io/Select-classes/' target=''>
+      Select classes
+    </a>
+    
+  </li>
+  
+    <li>
+    
+    <a class='fedora-navbar-link navbar-link' href='https://gokul2009.github.io/about/' target=''>
+      About
+    </a>
+    
+  </li>
+  <li>
+    
+    <a class='fedora-navbar-link navbar-link' href='https://gokul2009.github.io/contact/' target=''>
+      Contact
+    </a>
+    
+  </li>
+    <li>
+    
+    <a class='fedora-navbar-link navbar-link' href='https://play2048.co/' target=''>
+      2048 maths game
+    </a>
+    
+  </li>
+  
+  
+
+  <!-- If more than 5 links, collapse the rest in a dropdown -->
+  
+
+        </div>
+      </div>
+    </div>
   </div>
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="https://gokul2009.github.io/Vedu/">Home</a>
-  <a href="https://gokul2009.github.io/about/">About</a>
-  <a href="https://gokul2009.github.io/contact/">Contact</a>
-  <a href="https://gokul2009.github.io/Select-classes/">Select classes</a>
-  <a href="https://play2048.co/">2048 maths game</a>
-</div>
+</header>
 
-
-<div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <b style="color:white">Vedu</b></span>
-</div>
-
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
-   
-</body>
-<style>
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-</style>
-</head>
-</div>
-  <h1 style="color:white"><b>Valiant's Vedu make you study more easier</b></h1>
-  <h1 style="color:white"><b>Learning should not be stress full is is a fun process so I bring Valiant's Vedu</h1>
-  <h1 style="color:white"><b>Study what matters</b></h1>
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <img src="https://skillcept.org/wp-content/uploads/2021/03/ams.gif" style="width:100%">
-  <div class="text" style="color:black;font-size:5vw"><b>Online learning made easy</b></div>
-</div>
-
-<div class="mySlides fade">
-  <img src="https://ewyse.agency/wp-content/uploads/2021/06/Blended-Learning-eWyse.gif" style="width:100%">
-  <div class="text" style="color:black;font-size:5vw"><b>Study What Matters</b></div>
-</div>
-
-<div class="mySlides fade">
-  <img src="https://media-exp1.licdn.com/dms/image/C4D22AQFD7_Zs74VhNA/feedshare-shrink_2048_1536/0/1572874149760?e=1642636800&v=beta&t=HaPwb362HH3JakDlgZBn59FDc5ELf4HjN5qrqIxGZf4" style="width:100%">
-  <div class="text" style="color:black;font-size:5vw"><b>If your happy learning then your parents too</b></div>
-</div>
-
-<div class="mySlides fade">
-  <img src="https://images.squarespace-cdn.com/content/v1/572206861bbee0bcbee49566/1492582101684-KF0484PSORXBUEPBWEMJ/EspressoNet+365+GIF+09" style="width:100%">
-  <div class="text" style="color:black;font-size:5vw"><b>Learn from anywhere</b></div>
-</div>
-
-<div class="mySlides fade">
-  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/65626933112811.56a01870441f4.gif" style="width:100%">
-  <div class="text" style="color:white;font-size:5vw"><b>Valiant's Vedu</b></div>
-</div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 7000); 
-}
-</script>
-
-</body>
-<style>
-.button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 2vw 3vw;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2vw 1vw;
-  cursor: pointer;
-}
-</style>
-</head>
-<style>
-  .button {
-    border-radius: 4px;
-    background-color: #f4511e;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 18px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
+      <div role="main" class='view-school'>
+    
+      
   
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
+
   
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
+
   
-  .button:hover span {
-    padding-right: 25px;
-  }
+
   
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-  </style>
-  </head>
-<body>
+    <div id="blocks" data-ss-school-id='146684' class="blocks-page blocks-page-homepage ">
+  
+  
+    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
 
-<h2 style="color:white">Online Learning made easy </h2>
-<p style="color:white">FREE Learning app for classes 2 to 8</p>
-<a href="https://gokul2009.github.io/Select-classes/"class="button"><span >EXPLORE COURSES </span></a>
-</body>
-<style>
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
+  
+    
 
-.fa:hover {
-    opacity: 0.7;
-}
+      
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
+      
+        <div class="course-block block liquid_html  " id="block-11370624">
+      
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-pinterest {
-  background: #cb2027;
-  color: white;
-}
-
-.fa-snapchat-ghost {
-  background: #fffc00;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.fa-skype {
-  background: #00aff0;
-  color: white;
-}
-
-.fa-android {
-  background: #a4c639;
-  color: white;
-}
-
-.fa-dribbble {
-  background: #ea4c89;
-  color: white;
-}
-
-.fa-vimeo {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-tumblr {
-  background: #2c4762;
-  color: white;
-}
-
-.fa-vine {
-  background: #00b489;
-  color: white;
-}
-
-.fa-foursquare {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-stumbleupon {
-  background: #eb4924;
-  color: white;
-}
-
-.fa-flickr {
-  background: #f40083;
-  color: white;
-}
-
-.fa-yahoo {
-  background: #430297;
-  color: white;
-}
-
-.fa-soundcloud {
-  background: #ff5500;
-  color: white;
-}
-
-.fa-reddit {
-  background: #ff5700;
-  color: white;
-}
-
-.fa-rss {
-  background: #ff6600;
-  color: white;
-}
-</style>
-</head>
-<body>
-  <h1 style="color:white;"><b>Follow Me on</b></h1>
-
-<a href="https://www.instagram.com/the_valiant_develovper/" ><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png"width="50" height="50"></a>
-<a href="https://www.youtube.com/channel/UChyT0K5xWaFzvIYiKWq2WVw/videos" ><img src="https://www.vectorico.com/download/social_media/youtube-red-circle.png"width="50" height="50"></a>
-</body>
-<script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
-<script>
-  var myLandbot = new Landbot.Livechat({
-    configUrl: 'https://chats.landbot.io/v3/H-1087396-E4QEW9JDTUZ4R0FM/index.json',
-  });
-</script>
-
-
-
-
+        <!-- if no liquid block data saved we render a default state -->
 
 <style>
   .blank-template-body {
   color: #36414D;
-  font-size: 6vw;
+  font-size: 4vw;
   font-weight: 400;
-  line-height: 9vw;
+  line-height: 5vw;
   opacity: 0.6;
   width: 750px;
   text-align: left;
   }
 </style>
-    </b>
-</html> 
+
+
+  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CPoppins:300,400,600,700,800" rel="stylesheet">
+  
+
+
+
+      
+        </div>
+      
+
+    
+  
+
+
+  
+    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
+
+  
+    
+
+      
+
+      
+        <div class="course-block block liquid_html  " id="block-11090063">
+      
+
+        <!-- if no liquid block data saved we render a default state -->
+
+<style>
+  .blank-template-body {
+  color: #36414D;
+  font-size: 4vw;
+  font-weight: 400;
+  line-height: 5vw;
+  opacity: 0.6;
+  width: 750px;
+  text-align: left;
+  }
+</style>
+
+
+  
+    <div class="x-intro-section" role="banner">
+  <div class="x-intro-holder">
+    <h1>Welcome to Valiant's Vedu learning app</h1>
+  </div>
+</div>
+
+  
+
+
+
+      
+        </div>
+      
+
+    
+  
+
+
+  
+    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
+
+  
+    
+
+      
+
+      
+        <div class="course-block block liquid_html  " id="block-11363516">
+      
+<style>
+  .blank-template-body {
+  color: #36414D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.6;
+  width: 750px;
+  text-align: left;
+  }
+</style>
+       
+        <div class="course-block block liquid_html  " id="block-55447075">
+
+<style>
+  .blank-template-body {
+  color: #36414D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.6;
+  width: 750px;
+  text-align: left;
+  }
+</style>
+
+
+  
+    <div class="x-section-reviews x-section-beveled x-right x-bg-gray">
+  <div class="tweets">
+
+    <div class="tweet">
+       <img
+            class="tweet-img"
+            src="https://yt3.ggpht.com/25lHbLP-y3RzKiaUq6eWyS0etOIq_cOymevIP74Xqi4GfsBzDf-RPs-sfYNfB9IA4aMp8-oVlg=s900-c-k-c0x00ffffff-no-rj"
+            alt="">
+        <div>
+          <p>KAVYA</p>
+         
+          <a
+            class="tweet-user"
+            ></a
+          >
+        </div>
+
+      </header>
+      I am happy with this app it helped a lot in my exams and it absoutly helped me to gest better scores in maths and english this time-class 8
+
+
+    </div>
+    <div class="tweet">
+      <header class="tweet-header">
+          <img
+            class="tweet-img"
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+        </a>
+        <div>
+          <p>HARSITA's FATHER</p>
+      </header>
+      this app helped daughter in doing maths and now she is confident in doing maths-class 4
+    </div>
+    <div class="tweet">
+      <header class="tweet-header">
+        <a
+        >
+          <img
+            class="tweet-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1SlQ6ssHPjcdQhmh6Mmrn5zhM_RCmz-JvMQ&usqp=CAU"
+            alt=""
+          />
+        </a>
+        <div>
+          <p>ARNAV'S MOTHER</p>
+        </div>
+      </header>
+      this app helped my kid score good marks Vedu is the best app for science and maths-class 7
+    </div>
+    <div class="tweet">
+      <header class="tweet-header">
+          <img
+            class="tweet-img"
+            src="https://cdn1.byjus.com/byjusweb/img/home/image/atri.png"
+            alt=""
+          />
+        </a>
+        <div>
+          <p>YADHAV</p>
+          
+        </div>
+      </header>
+      Vedu helped raise my scores and helped pick up my learning pace in science-class 8
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+      
+        </div>
+      
+
+    
+  
+
+
+  
+    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
+
+  
+    
+
+      
+
+      
+        <div class="course-block block liquid_html  " id="block-11363519">
+      
+
+        <!-- if no liquid block data saved we render a default state -->
+
+<style>
+  .blank-template-body {
+  color: #36414D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.6;
+  width: 750px;
+  text-align: left;
+  }
+</style>
+
+
+  
+    <div class="page-container">
+  <div class="featurettes">
+    <header>
+      <div class="text-gradient">&lt; why learn with vedu &gt;</div>
+      <h2>Clear, Concise, Comprehensive, and Practical with No Fluff!</h2>
+    </header>
+    <div class="featurette">
+      <div>
+        <div class="featurette-highlight">Step-by-step Lessons</div>
+        <h3>Simple and Beginner friendly</h3>
+        <p>
+          Time and time again,students praise their ability to break down
+          complex topics into simple, digestible lessons that anyone can
+          understand.
+        </p>
+      </div>
+      <img
+        srcset="
+          https://codewithmosh-assets.netlify.app/why-simple.42c4851a.png    1x,
+          https://codewithmosh-assets.netlify.app/why-simple@2x.54722629.png 2x
+        "
+        src="https://codewithmosh-assets.netlify.app/why-simple.42c4851a.png"
+        alt=""
+      />
+    </div>
+    <div class="featurette">
+      <div>
+        <div class="featurette-highlight">Fast-track Your Learning</div>
+        <h3>Clear and Concise Lessons</h3>
+        <p>
+          Don't waste any more time on long, repetitive, and poorly-structured
+          courses. Vedu lessons are concise, right to the point, and free of
+          rambling and unnecessary buzzwords. Everything explained in plain
+          English.
+        </p>
+      </div>
+      <img
+        srcset="
+          https://codewithmosh-assets.netlify.app/why-concise.07bd0ff6.png    1x,
+          https://codewithmosh-assets.netlify.app/why-concise@2x.207cf3ab.png 2x
+        "
+        src="https://codewithmosh-assets.netlify.app/why-concise.07bd0ff6.png"
+        alt=""
+      />
+    </div>
+    <div class="featurette">
+      <div>
+        <div class="featurette-highlight">Videos Made with Love</div>
+        <h3>A Passionate Teacher</h3>
+        <p>
+          Just watch any of videos and you can hear their passion for
+          teaching. their calm, friendly, and approachable voice is one
+          of the reasons millions of people watch their YouTube videos.
+        </p>
+      </div>
+      <img
+        srcset="
+          https://media.istockphoto.com/photos/mature-female-doctor-demonstrates-expertise-in-training-course-with-picture-id1167849751?k=20&m=1167849751&s=612x612&w=0&h=aO_k0fCB0PT9aClZ2nVKeZONrsOhUgtxA5sjoAAxwuY=   1x,
+          https://codewithmosh-assets.netlify.app/why-teacher@2x.11eee3f5.png 2x
+        "
+        src="https://codewithmosh-assets.netlify.app/why-teacher.5997e687.png"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+      
+        </div>
+      
+
+    
+  
+
+
+  
+    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
+
+  
+    
+
+      
+
+      
+        <div class="course-block block featured_courses  " id="block-3949410">
+          <script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+<script>
+  var myLandbot = new Landbot.Livechat({
+    configUrl: 'https://chats.landbot.io/v3/H-1087396-E4QEW9JDTUZ4R0FM/index.json',
+  });
+</script>
+</html>
